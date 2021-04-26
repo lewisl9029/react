@@ -1,6 +1,6 @@
 # `@lewisl9029/eslint-plugin-react-hooks`
 
-This is a fork of the official eslint plugin `eslint-plugin-react-hooks`, that adds support for the [render-hooks](https://github.com/lewisl9029/render-hooks#readme) library/pattern.
+This is a fork of the official eslint plugin `eslint-plugin-react-hooks`, that adds support for the [react-anonymous](https://github.com/lewisl9029/react-anonymous#readme) library/pattern.
 
 This ESLint plugin enforces the [Rules of Hooks](https://reactjs.org/docs/hooks-rules.html).
 
