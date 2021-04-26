@@ -338,20 +338,20 @@ const tests = {
       }
     `,
     `
-      // Valid because Hooks component acts as a component boundary
+      // Valid because called in Anonymous component
       function App(props) {
         return props.isOpen
-          ? <Hooks>
+          ? <Anonymous>
               {() => <Modal close={useCallback(() => props.setIsOpen(false), [props.setIsOpen])} />}
-            </Hooks> 
+            </Anonymous> 
           : null;
       }
     `,
     `
-      // Valid because hooks function acts as a component boundary
+      // Valid because called in anonymous function
       function App(props) {
         return props.isOpen
-          ? hooks(() => <Modal close={useCallback(() => props.setIsOpen(false), [props.setIsOpen])} />) 
+          ? anonymous(() => <Modal close={useCallback(() => props.setIsOpen(false), [props.setIsOpen])} />) 
           : null;
       }
     `,
